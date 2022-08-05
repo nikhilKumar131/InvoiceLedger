@@ -15,11 +15,6 @@ app.get('/admin', function(req,res){
     res.sendFile(path.join(__dirname,'admin.html'));
 })
 
-//page to connect and check (useful when using admin only)
-app.get('metamask', function(req,res){
-    res.sendFile(path.join(__dirname,'metamsk.html'));
-})
-
 
 //port
 app.listen(process.env.PORT);
