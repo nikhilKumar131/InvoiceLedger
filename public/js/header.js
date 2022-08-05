@@ -1,5 +1,5 @@
 function home(){
-    location.href="http://localhost:3000/"
+    location.href="https://invoiceledger.herokuapp.com/"
 }
 
 function admin(){
