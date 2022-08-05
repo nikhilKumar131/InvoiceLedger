@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceQuery | Admin</title>
+    <link rel="stylesheet" type="text/css"   href="/css/Index.css">
+</head>
+<body>
+    <div class="header">
+        <a id="home" style="text-align: center;" onclick="home()">Home</a>
+        <a id="admin" onclick="admin()">Admin</a>
+    </div>
+    <div>
+        <p id="add">Connected account is: </p>
+        <a id="defaultaccount"></a>
+        <p>account not visible? Try Refresh</p>
+    </div>
+    <div>
+        <div >
+            <p>Set Invoice</p>
+            <a>enter invoice Number</a>
+            <input id="invNo">
+            <br>
+            <a>enter invoice Date</a>
+            <input id="invDate">
+            <br>
+            <a>enter invoice Amount</a>
+            <input id="invAmount">
+            <br>
+            <button onclick="Invset()">Set</button>
+        </div>
+        <div>
+            <p>Set BuyerSeller Pan Details</p>
+            <a>enter invoice Number</a>
+            <input id="invNo2">
+            <br>
+            <a>enter Buyer PAN ID</a>
+            <input id="BuyerPAN">
+            <br>
+            <a>enter Seller PAN ID</a>
+            <input id="SellerPAN">
+            <br>
+            <button onclick="Panset()">Set</button>
+        </div>
+        <div class="info">
+            <p>
+                Default wallet and account is added in the codes, as signing transactions is must for online node services
+            </p>
+            <p>
+                First you have to Set a invoice detail. Only then you can enter Pan details including that invoice. For integrity of data
+            </p>
+            <p>
+                Check console. If no erros shown, wait 15 sec and add more.
+            </p>
+        </div>
+    </div>
+
+    <script src="/js/header.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="/js/include_web3.js"></script>
+    <script src="/js/adminfunctions.js"></script>
+</body>
+</html>

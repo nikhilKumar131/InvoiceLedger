@@ -1,0 +1,40 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5mm;
+    text-align: center;
+}
+
+.header{
+    background-color: rgb(173, 172, 172);
+    color: white;
+    padding: 5mm;
+    margin: -2mm;
+    text-decoration: underline;
+}
+
+.body{
+    margin: 1cm;
+}
+
+.info{
+    margin-top: 3cm;
+    text-align: center;
+}
+#admin{
+    text-align: right;
+    margin-right: 1cm;
+    position: relative;
+    float: right;
+    text-decoration: underline;
+}
+#admin:hover{
+    background-color: rgb(218, 216, 216);
+}
+
+#home:hover{
+    background-color: rgb(218, 216, 216);
+}
+
+form{
+    margin:2cm;
+}

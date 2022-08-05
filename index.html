@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceQuery</title>
+    <link rel="stylesheet" type="text/css"   href="/css/Index.css">
+</head>
+<body>
+    <div class="header">
+        <a id="home" style="text-align: center;" onclick="home()">Home</a>
+        <a id="admin" onclick="admin()">Admin</a>
+    </div>
+    <div class="body">
+        <div class="functions">
+            <div>
+                <p>Enter invoice Number here to get details</p>
+                <input id="invoiceNo" width="4cm">
+                <button onclick="invToDetails()">search</button>
+                <p id="resultsInv">Results:</p>
+            </div>
+            <div style="margin-top: 2cm;">
+                <p>Enter buyer PAN  to get list of all invoice Numbers</p>
+                <input id="PanId" width="4cm">
+                <button onclick="PanToInv()">search</button>
+                <p id="resultsPAN">Results:</p>
+            </div>
+        </div>
+        <div class="info">
+            <p style="background-color: rgb(212, 211, 211);"> USE ADMIN TO SET INVOICE AND PAN DETAILS</p>
+            <br>
+            <p>Enter the invoice number to check Date and Amount </p>
+            <p>example(already saved): 1, 2, 111, 112, 113</p>
+            <p>Enter the Buyer's PAN ID to get list of invoice number he is involved in.</p>
+            <p>example(already saved): xyz, a, b</p>
+        </div>
+    </div>
+
+    <script src="/js/header.js"></script>
+
+    <!-- including web3 and smartcontract -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="/js/include_web3.js"></script>   
+    
+    <!-- including search functions -->
+    <script src="/js/functions.js"></script>
+    
+
+</body>
+</html>
